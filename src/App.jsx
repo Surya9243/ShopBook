@@ -27,6 +27,7 @@ const App = () => {
       return
     }
     setName([...name, { userName: addListName, userAmount: 0 }])
+    console.log('hello')
   }
 
   return (<>
