@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    width: 100vw;
+}
+
+nav {
+    background-color: rgb(162, 247, 247);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+nav div {
+    width: 15vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav button {
+    border: none;
+    width: 7vw;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.amTotel button:nth-child(1) {
+    color: red;
+}
+
+.amTotel button:nth-child(2) {
+    color: green;
+}
+
+.sign button {
+    font-size: 10px;
+    font-weight: 100;
+    background-color: rgba(0, 89, 255, 0.45);
+    padding: 10px;
+}
+.sign a{
+    text-decoration: none;
+    color: white;
+}
+main {
+    background-color: aliceblue;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.search {
+    width: 20%;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 3vh;
+    color: teal;
+    border: 2px solid teal;
+}
+
+main input::placeholder {
+    color: teal;
+}
+
+.add {
+    width: 25%;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid teal;
+}
+
+.add input {
+    width: 100%;
+    outline: none;
+    border: 0;
+    font-size: 3vh;
+    color: teal;
+    padding: 5px 10px;
+}
+
+.add input::placeholder {
+    color: teal;
+}
+
+main button {
+    background-color: teal;
+    width: 20%;
+    color: white;
+    border: none;
+}
+
+.list {
+    display: flex;
+    justify-content: space-around;
+    background-color: teal;
+    align-items: center;
+    color: white;
+    border: 2px solid yellow;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.register {
+    background-color: rgb(195, 221, 243);
+    width: 40vw;
+    margin: auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.inputsRegister {
+    margin: auto;
+    width: 20vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.loginMain {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    place-items: center;
+}
+
+.login {
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+    height: 60vh;
+    display: flex;
+    background-color: rgb(195, 221, 243);
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.namePass {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: auto;
+    gap: 20px;
+    text-align: start;
+}
+
+.namePass input {
+    width: 100%;
+}
+
+.namePass button {
+    width: 20%;
+}
