@@ -45,10 +45,12 @@ nav button {
     background-color: rgba(0, 89, 255, 0.45);
     padding: 10px;
 }
-.sign a{
+
+.sign a {
     text-decoration: none;
     color: white;
 }
+
 main {
     background-color: aliceblue;
     padding: 20px 100px;
@@ -109,22 +111,51 @@ main button {
     margin-top: 10px;
 }
 
+.listName {
+    text-decoration: none;
+}
+
 .register {
     background-color: rgb(195, 221, 243);
     width: 40vw;
     margin: auto;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .inputsRegister {
-    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+.inputsRegister div {
+    margin-top: 20px;
     width: 20vw;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    color: teal;
+    text-align: start;
+}
+
+.inputsRegister input {
+    outline: none;
+    width: 100%;
+    margin-top: 2px;
+    border: none;
+    height: 4vh;
+    padding: 10px;
+    color: teal;
+}
+
+.inputsRegister button {
+    margin: 30px;
+    background-color: teal;
+    width: 7vw;
+    color: white;
+    border: none;
+    height: 4vh;
 }
 
 .loginMain {
@@ -132,6 +163,7 @@ main button {
     width: 100vw;
     display: flex;
     place-items: center;
+
 }
 
 .login {
@@ -144,21 +176,94 @@ main button {
     flex-direction: column;
     gap: 40px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: teal;
 }
-
-.namePass {
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
+/* User Page */
+.user{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        height: 100vh;
+    width: 28vw;
     margin: auto;
-    gap: 20px;
-    text-align: start;
 }
-
-.namePass input {
-    width: 100%;
+.userName{
+    display: flex;
+    background-color: teal;
+    padding-bottom: 10px;
 }
-
-.namePass button {
+.userName>div {
     width: 20%;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(4, 249, 21);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.userName>div img{
+    height: 20px;
+    width: 30px;
+    margin-right: 20px;
+
+}
+.userName div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    width: 80%;
+    padding-right: 20px;
+}
+.trans{
+    height: 75%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.inputSR{
+text-align: center;
+background-color: gold;
+height: 14vh;
+padding: 10px;
+width: 30%;
+margin: auto;
+
+}
+.inputSR input{
+height: 5vh;
+width: 90%;
+border-radius: 10px;
+border: none;
+background-color: teal;
+color: white;
+outline: none;
+padding: 2px 10px;
+}
+.inputSR input::placeholder{
+color: white;
+}
+.inputBtns{
+margin-top: 10px;
+display: flex;
+justify-content: space-around;
+}
+.inputBtns button{
+height: 4vh;
+width: 8vw;
+border: none;
+
+}
+.send{
+background-color: red;
+color: white;
+}
+.receive{
+background-color:green;
+color: white;
+}
+.red{
+    color: red;
+    padding-left: 10px;
+}
+.green{
+    text-align: end;
+    color: green;
+    padding-right: 10px;
 }

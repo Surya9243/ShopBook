@@ -16,16 +16,29 @@ const Sign = () => {
     e.preventDefault()
     console.log(userData)
   }
-  return (<div className='register'>
-    <h1>Registeration</h1>
-    <form className='inputsRegister' onSubmit={signSubmit}>
-      <input value={userData.name} onChange={inputHandel} id='name' type="text" placeholder='Name' />
-      <input value={userData.email} onChange={inputHandel} id='email' type="text" placeholder='Phone Number' />
-      <input value={userData.password} onChange={inputHandel} id='password' type="password" placeholder='Password' />
-      <input value={userData.cPassword} onChange={inputHandel} id='cPassword' type="password" placeholder='Comfirm Password' />
-      <button >Submit</button>
-    </form>
-  </div>
+  return (
+    <div className='register'>
+      <h1>Registeration</h1>
+      <form className='inputsRegister' onSubmit={signSubmit}>
+        <div>
+          <p>Name</p>
+          <input value={userData.name} onChange={inputHandel} id='name' type="text" placeholder='Name' />
+        </div>
+        <div>
+          <p>Email</p>
+          <input value={userData.email} onChange={inputHandel} id='email' type="text" placeholder='Phone Number' />
+        </div>
+        <div>
+          <p>Password</p>
+          <input value={userData.password} onChange={inputHandel} id='password' type="password" placeholder='Password' />
+        </div>
+        <div>
+          <p>Confirm Password</p>
+          <input value={userData.cPassword} onChange={inputHandel} id='cPassword' type="password" placeholder='Comfirm Password' />
+        </div>
+        <button >Submit</button>
+      </form>
+    </div>
   )
 }
 
